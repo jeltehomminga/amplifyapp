@@ -82,7 +82,7 @@ function App() {
         value={formData.description}
       />
       <input type="file" onChange={onChange} />
-      <button onClick={createNote}>Create Note</button>
+      <button onClick={createNote}>Create note</button>
       <div>
         {notes.map((note) => (
           <div key={note.id || note.name}>
