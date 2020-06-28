@@ -88,7 +88,7 @@ function App() {
           <div key={note.id || note.name}>
             <h2>{note.name}</h2>
             <p>{note.description}</p>
-            <button onClick={deleteNote}>Delete note</button>
+            <button onClick={() => deleteNote(note.id)}>Delete note</button>
             {/* // eslint-disable-next-line jsx-a11y/alt-text */}
             {note.image && <img src={note.image} style={{ width: 400 }} />}
           </div>
